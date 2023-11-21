@@ -1,0 +1,18 @@
+﻿<script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script>
+     $(document).ready(function ()
+     {
+        $.ajax({
+            url: "https://localhost:7046/api/Slider/getgallery?id=2",
+            success: function(data) {
+                console.log({data});
+            },
+            error: function(error) {
+                console.log(error +'error');
+            }
+        });
+    });
+
+</script>
+
